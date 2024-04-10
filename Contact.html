@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Contact.css">
+    <title>Contacto - Tienda Fórmula 1</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li><a href="Horario.html">Horario</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-info">
+            <h1>Contacto</h1>
+            <p>¿Tienes preguntas sobre nuestros productos o deseas más información? Completa el formulario a continuación o utiliza uno de los siguientes métodos de contacto.</p>
+            <ul>
+                <li>Teléfono: +662 282 84 43</li>
+                <li>Email: racingteam1@gmail.com</li>
+                <li>Instagram: @racingteam</li>
+            </ul>
+        </section>
+        
+        <section class="contact-form">
+            <form action="submit_contact.php" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
