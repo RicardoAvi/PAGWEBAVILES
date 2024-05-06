@@ -3,54 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Horario.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Horarios - Tienda Ropa Fórmula 1</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Productos.html">Productos</a></li>
-                <li><a href="Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main>
+    <main class="container mt-4">
         <section class="schedule-intro">
             <h1>Horarios de la Tienda</h1>
             <p>Conoce los horarios de nuestra tienda y planifica tu próxima visita para vivir la experiencia completa de Fórmula 1.</p>
         </section>
         
         <section class="schedule-table">
-            <table>
-                <tr>
-                    <th>Día</th>
-                    <th>Apertura</th>
-                    <th>Cierre</th>
-                </tr>
-                <tr>
-                    <td>Lunes a Viernes</td>
-                    <td>10:00</td>
-                    <td>20:00</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>10:00</td>
-                    <td>22:00</td>
-                </tr>
-                <tr>
-                    <td>Domingo</td>
-                    <td>11:00</td>
-                    <td>18:00</td>
-                </tr>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Día</th>
+                        <th scope="col">Apertura</th>
+                        <th scope="col">Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>10:00</td>
+                        <td>20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00</td>
+                        <td>22:00</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>11:00</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
         
-        <div class="special-events">
+        <section class="special-events">
             <h2>Horarios Especiales</h2>
-            
             <p>En días de eventos especiales, los horarios pueden variar. Consulta nuestras redes sociales para más información.</p>
             <div class="social-icons">
                 <a href="" target="_blank" aria-label="Facebook" class="facebook">
@@ -63,14 +74,17 @@
                     <img src="images/s3.svg" alt="WhatsApp">
                 </a>
             </div>
-            
-
+        </section>
     </main>
     
-    <footer>
-        <p>© 2024 Tienda Ropa Fórmula 1. Todos los derechos reservados.</p>
+    <footer class="bg-dark text-white py-2">
+        <div class="container">
+            <p>© 2024 Tienda Ropa Fórmula 1. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    
-   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

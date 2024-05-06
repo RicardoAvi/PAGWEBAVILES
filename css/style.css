@@ -1,191 +1,68 @@
-@font-face
-{
-font-family: "Lato";
-src: url(./fonts/Lato/Lato-Light.ttf);
-}
-@font-face
-{
-    font-family: "Roboto";
-    src: url(./fonts/Roboto/Roboto-Bold.ttf)
+.containerHeader {
+    background-color: #f8f9fa;
+    padding: 20px 0;
 }
 
-body {
-    margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-    display: block;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-/* ---- stats.js ---- */
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
-}
-/* UTILIDADES */
-img
-{
-max-width: 100%;
-}
-.contenedor
-{
-max-width: 1100px;
-margin: 0 auto;
-width: 95%;
-}
-
-/* MIS ESTILOS */
-.containerHeader
-{
- height: 100vh;
- background-color: blue;
- background: linear-gradient(90deg, #010315 0%, #0569e4b5 100%);
- display: flex;
- justify-content: center;
- align-items: center;
-}
-.containMain
-{
-    display: grid;
-    grid-template-columns:  repeat(2, 1fr);
-    width: 100%;
-    gap: 8rem
-    
-}
-.item h1
-{
-    font-family: "Lato";
-    font-weight: lighter;
-    line-height: 4rem;
-    font-size: 2.6rem;
-    text-transform: capitalize;
-    color: #FFFF;
-}
-.item p
-{
-font-size: 16px;
-color: #FFF;
-font-family: "Lato";
-line-height: 2rem;
-margin: 2rem 0;
-
-}
-.item button
-{
-width: 10rem;
-height: 3rem;
-background: transparent;
-font-family: "Lato";
-text-transform: uppercase;
-color: #FFF;
-border-radius: 50px;
-border: 2px solid #FFF;
-cursor: pointer;
-}
-.item:nth-of-type(2)
-{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-/* NAVEGACION */
-nav
-{
-position: absolute;
-top: 0;
-width: 100%;
-height: 5rem;
-padding: .5rem 0;
-}
-nav .contenedor
-{
+.containMain {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
 
+.item {
+    flex: 1;
+    padding: 20px;
 }
-.contenedor .containerL
-{
-    display: inherit;
+
+.item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.containerL {
+    flex: 1;
+    display: flex;
     align-items: center;
 }
-.containerL h2
-{
-    font-family: "Roboto";
-    font-size: 2rem;
-    color: #ede3e3cd;
-}
-.containerLinks
-{
-    margin-left: 4rem;
-}
-.containerLinks a
-{
-margin-right: 2.5rem;
-color: #FFF;
-font-family: "Lato";
-font-size: 16px;
-text-transform: capitalize;
-text-decoration: none;
-}
-.containerR
-{
-    
-    display: inherit;
+
+.containerR {
+    display: flex;
     align-items: center;
 }
-.containerR button
-{
-width:  10rem;
-height: 3rem;
-border-radius: 50px;
-background-color: transparent;
-border: 2px solid #FFF;
-font-family: "Lato";
-font-size: 1.2rem;
-color: #FFFF;
-outline: none;
-cursor: pointer;
+
+.containerLinks a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.containerLinks a:hover {
+    text-decoration: underline;
 }
